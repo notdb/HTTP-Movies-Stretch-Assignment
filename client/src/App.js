@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import SavedList from "./Movies/SavedList";
 import MovieList from "./Movies/MovieList";
 import Movie from "./Movies/Movie";
-
+import AddMovieForm from "./Movies/AddMovieForm";
 export default class App extends Component {
   constructor() {
     super();
@@ -30,6 +30,7 @@ export default class App extends Component {
             return <Movie {...props} addToSavedList={this.addToSavedList} />;
           }}
         />
+        <AddMovieForm />
       </div>
     );
   }
